@@ -8,8 +8,8 @@ Portfolio project for credit risk and fintech roles.
 
 ## Current Status
 Week 1 — Data Pipeline in progress.
-Current file in progress: src/data/edgar.py
-Last working module: src/data/resolver.py.
+Current file in progress: src/rag/indexer.py
+Last working module: src/data/macro.py.
 Known issues: None yet.
 
 ## Stack
@@ -40,9 +40,9 @@ PD mapped to Moody's historical default rates by category
 |--------|--------|
 | src/data/resolver.py | completed |
 | src/data/financials.py | completed |
-| src/data/edgar.py | complete |
-| src/data/transcripts.py | Not started |
-| src/data/macro.py | Not started |
+| src/data/edgar.py | completed |
+| src/data/transcripts.py | completed |
+| src/data/macro.py | completed |
 | src/rag/indexer.py | Not started |
 | src/agents/research_analyst.py | Not started |
 | src/agents/credit_analyst.py | Not started |
