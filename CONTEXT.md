@@ -40,7 +40,7 @@ PD mapped to Moody's historical default rates by category
 |--------|--------|
 | src/data/resolver.py | completed |
 | src/data/financials.py | completed |
-| src/data/edgar.py | in progress |
+| src/data/edgar.py | complete |
 | src/data/transcripts.py | Not started |
 | src/data/macro.py | Not started |
 | src/rag/indexer.py | Not started |
