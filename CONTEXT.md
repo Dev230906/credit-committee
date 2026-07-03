@@ -7,9 +7,9 @@ Produces a structured credit memo with internal rating and PD estimate.
 Portfolio project for credit risk and fintech roles.
 
 ## Current Status
-Week 1 — Project skeleton created. Starting data pipeline.
-Current file in progress: None yet.
-Last working module: None yet.
+Week 1 — Data Pipeline in progress.
+Current file in progress: src/data/resolver.py
+Last working module: src/data/financials.py.
 Known issues: None yet.
 
 ## Stack
@@ -38,8 +38,8 @@ PD mapped to Moody's historical default rates by category
 ## Module Status
 | Module | Status |
 |--------|--------|
-| src/data/resolver.py | Not started |
-| src/data/financials.py | Not started |
+| src/data/resolver.py | in progress |
+| src/data/financials.py | completed |
 | src/data/edgar.py | Not started |
 | src/data/transcripts.py | Not started |
 | src/data/macro.py | Not started |
