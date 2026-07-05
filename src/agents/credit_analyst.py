@@ -19,19 +19,26 @@ Use the rating mapping guidelines provided.
 Output ONLY valid JSON — no preamble, no markdown backticks."""
 
 RATING_GUIDELINES = """
-RATING MAPPING GUIDELINES:
-AAA/AA : Debt/EBITDA < 1x, Interest Coverage > 15x, Altman Z > 5
-A      : Debt/EBITDA 1-2x, Interest Coverage 8-15x, Altman Z > 4
-BBB    : Debt/EBITDA 2-3x, Interest Coverage 4-8x, Altman Z > 3
-BB     : Debt/EBITDA 3-5x, Interest Coverage 2-4x, Altman Z 2-3
-B      : Debt/EBITDA 5-7x, Interest Coverage 1.5-2x, Altman Z 1.5-2
-CCC    : Debt/EBITDA > 7x, Interest Coverage < 1.5x, Altman Z < 1.8
-CC/C/D : Interest Coverage < 1x, negative FCF, imminent default risk
+RATING MAPPING GUIDELINES — apply these strictly:
+AAA/AA : Debt/EBITDA < 1x AND Interest Coverage > 15x AND Altman Z > 5
+A      : Debt/EBITDA 1-2x AND Interest Coverage 8-15x AND Altman Z > 4
+BBB    : Debt/EBITDA 2-3x AND Interest Coverage 4-8x AND Altman Z > 3
+BB     : Debt/EBITDA 3-5x AND Interest Coverage 2-4x AND Altman Z 2-3
+B      : Debt/EBITDA 5-7x AND Interest Coverage 1.5-2x AND Altman Z 1.5-2
+CCC    : Debt/EBITDA > 7x AND Interest Coverage < 1.5x AND Altman Z < 1.8
+CC/C/D : Interest Coverage < 1x OR negative FCF AND imminent default risk
+
+IMPORTANT: Use the LOWEST applicable rating if metrics are mixed.
+Example: If Debt/EBITDA is 0.68x (AAA) but Current Ratio is 0.89x (weak),
+the rating should still reflect the overall credit quality — do not 
+automatically assign AAA just because one metric looks strong.
 
 TREND ASSESSMENT:
 - Improving: ratio moving in positive direction over last 3 quarters
-- Deteriorating: ratio moving in negative direction over last 3 quarters
+- Deteriorating: ratio moving in negative direction over last 3 quarters  
 - Stable: minimal change quarter over quarter
+
+If a ratio is N/A or unavailable, note it but do not use it to justify a rating.
 """
 
 SCHEMA = """
