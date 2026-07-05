@@ -16,6 +16,7 @@ The application includes a **Streamlit** interface, allows users to provide addi
 Getting Started
 
 Clone the repository:
+
 git clone <repository-url>
 cd credit-committee
 
@@ -29,12 +30,17 @@ venv\Scripts\activate
 source venv/bin/activate
 
 Install dependencies:
+
 pip install -r requirements.txt
 
 Create a .env file containing:
+
 GROQ_API_KEY=your_key
+
 FRED_API_KEY=your_key
+
 USER_EMAIL=your_email #required for web scraping
+
 Launch the application:
 
 streamlit run app.py
