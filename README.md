@@ -13,3 +13,28 @@ The collected information is then analyzed by four specialized AI agents:
 
 The application includes a **Streamlit** interface, allows users to provide additional observations before the final decision, and generates a downloadable **PDF credit memo** containing an indicative internal rating, probability of default, and lending recommendation.
 
+Getting Started
+
+Clone the repository:
+git clone <repository-url>
+cd credit-committee
+
+Create and activate a virtual environment:
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+Create a .env file containing:
+GROQ_API_KEY=your_key
+FRED_API_KEY=your_key
+USER_EMAIL=your_email #required for web scraping
+Launch the application:
+
+streamlit run app.py
